@@ -1818,6 +1818,15 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 @media only screen and (max-width: 900px) {
+  #home {
+    height: auto;
+    min-height: 840px;
+  }
+  #home,
+  .home-content {
+    display: block;
+    text-align: center;
+  }
   #mro {
     height: auto;
     min-height: 840px;
