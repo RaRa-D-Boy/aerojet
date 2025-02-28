@@ -10,6 +10,7 @@
 
 @font-face {
   font-family: "montserrat-black";
+  font-family: "Poppins", serif;
   src: url("../fonts/montserrat/montserrat-black-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-black-webfont.woff") format("woff");
   font-style: normal;
   font-weight: normal;
