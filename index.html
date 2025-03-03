@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
@@ -15,480 +13,448 @@
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
     <title>Aerojet</title>
-  </head>
+</head>
 
-  <body id="top" class="overflow-x-hidden">
+<body id="top" class="overflow-x-hidden">
     <header class="sticky top-0 z-50">
-      <nav
-        class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 md:px-12 text-lg text-gray-700"
-        style="background-color: #000c2dec; opacity: 1"
-      >
-        <div>
-          <div class="p-4" style="height: auto">
-            <img
-              src="./images/logoAeroJet.png"
-              alt=""
-              class="w-[120] object-contain"
-              style="height: 50px !important"
-            />
-          </div>
-        </div>
+        <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 md:px-12 text-lg text-gray-700"
+            style="background-color: #000c2dec; opacity: 1">
+            <div>
+                <div class="p-4" style="height: auto">
+                    <img src="./images/logoAeroJet.png" alt="" class="w-[120] object-contain"
+                        style="height: 50px !important" />
+                </div>
+            </div>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          id="menu-button"
-          class="h-6 w-6 text-white cursor-pointer md:hidden block"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button"
+                class="h-6 w-6 text-white cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
 
-        <div
-          data-aos="fade-up"
-          class="hidden w-full md:flex md:items-center md:w-auto text-white"
-          id="menu"
-        >
-          <ul
-            class="pt-4 text-sm text-white items-center md:flex md:justify-between md:pt-0 header-main-nav"
-          >
-            <li class="current">
-              <a
-                href="#home"
-                class="smoothscroll md:p-4 py-2 block hover:font-bold hover:text-blue-200"
-                >Home</a
-              >
-            </li>
-            <!-- <li>
+            <div data-aos="fade-up" class="hidden w-full md:flex md:items-center md:w-auto text-white" id="menu">
+                <ul class="pt-4 text-sm text-white items-center md:flex md:justify-between md:pt-0 header-main-nav">
+                    <li class="current">
+                        <a href="#home"
+                            class="smoothscroll md:p-4 py-2 block hover:font-bold hover:text-blue-200">Home</a>
+                    </li>
+                    <!-- <li>
                         <a href="#services" class=" smoothscroll md:p-4 py-2 block hover:font-bold hover:text-blue-200" >Services</a>
                     </li> -->
-            <li>
-              <a
-                href="#mro"
-                class="smoothscroll md:p-4 py-2 block hover:font-bold hover:text-blue-200"
-                >Accra MRO Project</a
-              >
-            </li>
+                    <li>
+                        <a href="#mro" class="smoothscroll md:p-4 py-2 block hover:font-bold hover:text-blue-200">Accra
+                            MRO Project</a>
+                    </li>
 
-            <li>
-              <a
-                class="smoothscroll block hover:text-white text-white bg-blue-500 bg-opacity-50 backdrop-blur-md px-4 py-2 my-4 md:0 rounded-md"
-                href="#footer"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+                    <li>
+                        <a class="smoothscroll block hover:text-white text-white bg-blue-500 bg-opacity-50 backdrop-blur-md px-4 py-2 my-4 md:0 rounded-md"
+                            href="#footer">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <main class="">
-      <section
-        class="w-full h-screen relative"
-        id="home"
-        data-parallax="scroll"
-        data-image-src="images/Marine Services/jet.jpg"
-        data-natural-width="3000"
-      >
-        <img
+    <main class=" hidden md:block">
+        <section class="w-full h-screen relative " id="home" data-parallax="scroll"
+            data-image-src="images/Marine Services/jet.jpg" data-natural-width="3000">
+            <!-- <img
           src="./images/Marine Services/jet.jpg"
           alt=""
           class="block md:hidden h-full w-full object-cover"
-        />
-        <div
-          class="absolute top-0 left-0 w-full h-screen"
-          style="background-color: #000c2dec; opacity: 0.9"
-        ></div>
-        <div
-          class="absolute px-6 md:px-12 top-1/2 left-0 lg:top-1/2 lg:left-1/2 lg:px-0 transform -translate-y-1/2 lg:-translate-x-1/2 text-white"
-        >
-          <p
-            data-aos="fade-up"
-            class="text-3xl sm:text-4xl mb-24 md:text-6xl text-start lg:text-center"
-          >
-            African Aviation Excellence is here!
-          </p>
-          <p
-            data-aos="fade-up"
-            class="text-start lg:text-center text-base sm:text-lg md:text-xl text-blue-600"
-          >
-            We're fixing some stuff in the hangar at the moment.<br />
-            The Aerojet Aviation page isn't gone, we are updating the site for
-            better functionality.<br />
-            We'll be up and running again shortly.
-          </p>
-          <p
-            data-aos="fade-up"
-            class="text-start lg:text-center text-base sm:text-lg md:text-xl uppercase"
-          >
-            <br />Please check back in a few days!
-          </p>
-        </div>
-      </section>
-      <!-- <section class="relative pt-24 pb-6 md:pb-36 bg-blueGray-50 overflow-hidden" id="services" data-parallax="scroll"
-        data-image-src="" data-natural-width="3000">
-            <div class="relative z-10  px-6 md:px-12 mx-auto">
-                <p class="mb-6 text-sm text-blue-600 font-bold uppercase tracking-px">Join with us</p>
-                <h2 data-aos="fade-up" class="mb-5 text-3xl sm:text-4xl md:text-6xl font-bold font-heading tracking-px-n leading-tight">Our Services
-                </h2>
-                <p data-aos="fade-up" class="mb-20 text-gray-600 font-medium leading-relaxed md:max-w-md">
-                    We take pride in offering a comprehensive suite of services that cater to various industries, each designed to meet the unique needs of our clients. 
+        /> -->
+            <div class="absolute top-0 left-0 w-full h-screen" style="background-color: #000c2dec; opacity: 0.9"></div>
+            <div
+                class="absolute px-6 md:px-12 top-1/2 left-0 lg:top-1/2 lg:left-1/2 lg:px-0 transform -translate-y-1/2 lg:-translate-x-1/2 text-white">
+                <p data-aos="fade-up" class="text-3xl sm:text-4xl mb-24 md:text-6xl text-start lg:text-center">
+                    African Aviation Excellence is here!
                 </p>
-                <div data-aos="fade-up" class="flex flex-nowrap overflow-x-scroll -m-2 mb-1.5 pb-6">
-                    <div class="flex-shrink-0 w-full md:max-w-md p-2">
-                        <a class="group" href="#">
-                            <div
-                                class="p-8 h-full bg-white bg-opacity-80 border group-hover:border-gray-300 group-hover:cursor-default rounded-xl shadow-xl hover:shadow-2xl">
-                                <div class="flex flex-col justify-between h-full">
-                                    <div class="mb-16">
-                                        <h3
-                                            class="mb-4 text-xl font-bold font-heading leading-snug bg-blue-800 w-[50px] p-3 rounded-md shadow-2xl">
-
-
-                                            <svg fill="white" width="30px" height="30px" viewBox="0 0 256 256" id="Flat"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M180,216a12.00028,12.00028,0,0,1-12,12H24a12,12,0,0,1,0-24H168A12.00028,12.00028,0,0,1,180,216ZM255.80762,94.13916a11.99648,11.99648,0,0,1-5.77637,8.23486L98.624,190.40186a43.73329,43.73329,0,0,1-52.209-5.939L8.71973,149.12354l-.001-.001a19.99971,19.99971,0,0,1,5.80176-32.97266l16.75293-7.17969a11.99548,11.99548,0,0,1,9.45312,0l22.50782,9.646,8.40039-4.80029L53.27344,97.29a20.00065,20.00065,0,0,1,5.5-33.249l16.5-7.07081a11.99437,11.99437,0,0,1,8.52148-.35449l54.82324,18.2749,39.667-23.33349a43.77071,43.77071,0,0,1,56.3623,10.063l18.63965,22.78076A11.9995,11.9995,0,0,1,255.80762,94.13916Zm-30.01074-5.43652-9.72364-11.88477a19.9001,19.9001,0,0,0-25.62012-4.57422L146.084,98.34326a12.00429,12.00429,0,0,1-9.8789,1.041L80.5332,80.82715l-6.55468,2.80908,26.04882,23.44434A11.9999,11.9999,0,0,1,97.9541,126.419l-28,16a12.00354,12.00354,0,0,1-10.68066.61084L36,133.05566l-6.40234,2.74366L62.8291,166.9541a19.87473,19.87473,0,0,0,23.73242,2.69922Z" />
-                                            </svg>
-                                        </h3>
-                                        <p class="text-gray-500 font-medium leading-relaxed py-12 text-2xl">
-                                            Aircraft Maintenance & Repairs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="flex-shrink-0 w-full md:max-w-md p-2">
-                        <a class="group" href="#">
-                            <div
-                                class="p-8 h-full bg-white bg-opacity-80 border group-hover:cursor-default group-hover:border-gray-300 rounded-xl hover:shadow-2xl">
-                                <div class="flex flex-col justify-between h-full">
-                                    <div class="mb-16">
-                                        <h3
-                                            class="mb-4 text-xl font-bold font-heading leading-snug bg-blue-800 w-[50px] p-3 rounded-md shadow-2xl">
-
-
-                                            <svg fill="white" width="30px" height="30px" viewBox="0 0 256 256" id="Flat"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M180,216a12.00028,12.00028,0,0,1-12,12H24a12,12,0,0,1,0-24H168A12.00028,12.00028,0,0,1,180,216ZM255.80762,94.13916a11.99648,11.99648,0,0,1-5.77637,8.23486L98.624,190.40186a43.73329,43.73329,0,0,1-52.209-5.939L8.71973,149.12354l-.001-.001a19.99971,19.99971,0,0,1,5.80176-32.97266l16.75293-7.17969a11.99548,11.99548,0,0,1,9.45312,0l22.50782,9.646,8.40039-4.80029L53.27344,97.29a20.00065,20.00065,0,0,1,5.5-33.249l16.5-7.07081a11.99437,11.99437,0,0,1,8.52148-.35449l54.82324,18.2749,39.667-23.33349a43.77071,43.77071,0,0,1,56.3623,10.063l18.63965,22.78076A11.9995,11.9995,0,0,1,255.80762,94.13916Zm-30.01074-5.43652-9.72364-11.88477a19.9001,19.9001,0,0,0-25.62012-4.57422L146.084,98.34326a12.00429,12.00429,0,0,1-9.8789,1.041L80.5332,80.82715l-6.55468,2.80908,26.04882,23.44434A11.9999,11.9999,0,0,1,97.9541,126.419l-28,16a12.00354,12.00354,0,0,1-10.68066.61084L36,133.05566l-6.40234,2.74366L62.8291,166.9541a19.87473,19.87473,0,0,0,23.73242,2.69922Z" />
-                                            </svg>
-                                        </h3>
-                                        <p class="text-gray-500 font-medium leading-relaxed py-12 text-2xl">
-                                            Aircraft Maintenance & Repairs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="flex-shrink-0 w-full md:max-w-md p-2">
-                        <a class="group" href="#">
-                            <div
-                                class="p-8 h-full bg-white bg-opacity-80 border group-hover:cursor-default group-hover:border-gray-300 rounded-xl  hover:shadow-2xl">
-                                <div class="flex flex-col justify-between h-full">
-                                    <div class="mb-16">
-                                        <h3
-                                            class="mb-4 text-xl font-bold font-heading leading-snug bg-blue-800 w-[50px] p-3 rounded-md shadow-2xl">
-
-
-                                            <svg fill="white" width="30px" height="30px" viewBox="0 0 256 256" id="Flat"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M180,216a12.00028,12.00028,0,0,1-12,12H24a12,12,0,0,1,0-24H168A12.00028,12.00028,0,0,1,180,216ZM255.80762,94.13916a11.99648,11.99648,0,0,1-5.77637,8.23486L98.624,190.40186a43.73329,43.73329,0,0,1-52.209-5.939L8.71973,149.12354l-.001-.001a19.99971,19.99971,0,0,1,5.80176-32.97266l16.75293-7.17969a11.99548,11.99548,0,0,1,9.45312,0l22.50782,9.646,8.40039-4.80029L53.27344,97.29a20.00065,20.00065,0,0,1,5.5-33.249l16.5-7.07081a11.99437,11.99437,0,0,1,8.52148-.35449l54.82324,18.2749,39.667-23.33349a43.77071,43.77071,0,0,1,56.3623,10.063l18.63965,22.78076A11.9995,11.9995,0,0,1,255.80762,94.13916Zm-30.01074-5.43652-9.72364-11.88477a19.9001,19.9001,0,0,0-25.62012-4.57422L146.084,98.34326a12.00429,12.00429,0,0,1-9.8789,1.041L80.5332,80.82715l-6.55468,2.80908,26.04882,23.44434A11.9999,11.9999,0,0,1,97.9541,126.419l-28,16a12.00354,12.00354,0,0,1-10.68066.61084L36,133.05566l-6.40234,2.74366L62.8291,166.9541a19.87473,19.87473,0,0,0,23.73242,2.69922Z" />
-                                            </svg>
-                                        </h3>
-                                        <p class="text-gray-500 font-medium leading-relaxed py-12 text-2xl">
-                                            Aircraft Maintenance & Repairs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="flex-shrink-0 w-full md:max-w-mdp-2">
-                        <a class="group" href="#">
-                            <div
-                                class="p-8 h-full bg-white bg-opacity-80 border group-hover:cursor-default group-hover:border-gray-300 rounded-xl  hover:shadow-2xl">
-                                <div class="flex flex-col justify-between h-full">
-                                    <div class="mb-16">
-                                        <h3
-                                            class="mb-4 text-xl font-bold font-heading leading-snug bg-blue-800 w-[50px] p-3 rounded-md shadow-2xl">
-
-
-                                            <svg fill="white" width="30px" height="30px" viewBox="0 0 256 256" id="Flat"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M180,216a12.00028,12.00028,0,0,1-12,12H24a12,12,0,0,1,0-24H168A12.00028,12.00028,0,0,1,180,216ZM255.80762,94.13916a11.99648,11.99648,0,0,1-5.77637,8.23486L98.624,190.40186a43.73329,43.73329,0,0,1-52.209-5.939L8.71973,149.12354l-.001-.001a19.99971,19.99971,0,0,1,5.80176-32.97266l16.75293-7.17969a11.99548,11.99548,0,0,1,9.45312,0l22.50782,9.646,8.40039-4.80029L53.27344,97.29a20.00065,20.00065,0,0,1,5.5-33.249l16.5-7.07081a11.99437,11.99437,0,0,1,8.52148-.35449l54.82324,18.2749,39.667-23.33349a43.77071,43.77071,0,0,1,56.3623,10.063l18.63965,22.78076A11.9995,11.9995,0,0,1,255.80762,94.13916Zm-30.01074-5.43652-9.72364-11.88477a19.9001,19.9001,0,0,0-25.62012-4.57422L146.084,98.34326a12.00429,12.00429,0,0,1-9.8789,1.041L80.5332,80.82715l-6.55468,2.80908,26.04882,23.44434A11.9999,11.9999,0,0,1,97.9541,126.419l-28,16a12.00354,12.00354,0,0,1-10.68066.61084L36,133.05566l-6.40234,2.74366L62.8291,166.9541a19.87473,19.87473,0,0,0,23.73242,2.69922Z" />
-                                            </svg>
-                                        </h3>
-                                        <p class="text-gray-500 font-medium leading-relaxed py-12 text-2xl">
-                                            Aircraft Maintenance & Repairs</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                </div>
+                <p data-aos="fade-up" class="text-start lg:text-center text-base sm:text-lg md:text-xl text-blue-600">
+                    We're fixing some stuff in the hangar at the moment.<br />
+                    The Aerojet Aviation page isn't gone, we are updating the site for
+                    better functionality.<br />
+                    We'll be up and running again shortly.
+                </p>
+                <p data-aos="fade-up" class="text-start lg:text-center text-base sm:text-lg md:text-xl uppercase">
+                    <br />Please check back in a few days!
+                </p>
             </div>
-        </section> -->
-      <section
-        class="w-full h-screen relative"
-        id="mro"
-        data-parallax="scroll"
-        data-image-src="./images/jet1.jpg"
-        data-natural-width="3000"
-      >
-        <!-- <img src="./images/jet1.jpg" alt="" class="h-full w-full object-cover" /> -->
-        <div
-          class="absolute top-0 left-0 w-full h-screen"
-          style="background-color: #000c2dec; opacity: 0.9"
-        ></div>
-        <div class="absolute top-10 px-6 md:px-12 py-4 text-white">
-          <p
-            data-aos="fade-up"
-            class="text-3xl sm:text-4xl mb-24 md:text-6xl text-start  text-blue-700 lg:text-center"
-          >
-            The Aerojet Accra MRO Project
-          </p>
-        </div>
-        <div
-          class="absolute px-6 md:px-12 bottom-10 left-0 transform text-white"
-        >
-          <p
-            data-aos="fade-up"
-            class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6"
-          >
-            Following detailed consultations in the host country, the project
-            has been prioritized by the Government of Ghana to help achieve the
-            following macro objectives:
-          </p>
+        </section>
+        <section class="w-full h-screen hidden lg:relative" id="mro" data-parallax="scroll"
+            data-image-src="./images/jet1.jpg" data-natural-width="3000">
+            <!-- <img src="./images/jet1.jpg" alt="" class="h-full w-full object-cover" /> -->
+            <div class="absolute top-0 left-0 w-full h-screen" style="background-color: #000c2dec; opacity: 0.9"></div>
+            <div class="lg:absolute top-10 px-6 md:px-12 py-4 text-white hidden lg:block">
+                <p data-aos="fade-up"
+                    class="text-3xl sm:text-4xl mb-24 md:text-6xl text-start  text-blue-700 lg:text-center">
+                    The Aerojet Accra MRO Project
+                </p>
+            </div>
+            <div class="absolute px-6 md:px-12 bottom-10 left-0 transform text-white h-auto ">
+                <p data-aos="fade-up"
+                    class="text-3xl sm:text-4xl mb-24 block lg:hidden  md:text-6xl text-start  text-blue-700 lg:text-center">
+                    The Aerojet Accra MRO Project
+                </p>
 
-          <p
-            data-aos="fade-up"
-            class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6"
-          >
-            1. To make Kotoka International Airport (KIA) a regional hub thus
-            stimulating economic growth and development.
-          </p>
-          <p
-            data-aos="fade-up"
-            class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-12"
-          >
-            2. To help drastically reduce the cost of air travel in the region
-          </p>
-          <p
-            data-aos="fade-up"
-            class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6 "
-          >
-            In order to achieve these objectives, the Government of Ghana has
-            for the first time ever ceded the full responsibility of developing
-            this critical infrastructure and essential service to Aerojet
-            Aviation Ltd (a private company).
-          </p>
-          <p
-            data-aos="fade-up"
-            class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6"
-          >
-            Aerojet Aviation was established in 2016 to provide a lasting
-            solution to the problem of aircraft maintenance & repairs
-            capabilities in Africa; to this end the company aims to o0er a full
-            scope of technical aviation support services that will serve as a
-            launchpad for the African air transport industry to thrive. This
-            will invariably lead to increased routes and lower fares; thus,
-            making travel e0ortless and accessible. The consequential boost in
-            air travel will further result in significant economic growth across
-            the continent.
-          </p>
-          <p
-            data-aos="fade-up"
-            class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6"
-          >
-            The state-of-the-art facility to be developed at the Kotoka
-            International Airport in Accra Ghana, is to serve as a Centre of
-            Excellence for the delivery of all aviation services and training
-            scheduled to be o0ered upon completion of the project. Aerojet seeks
-            to bring aircraft technical training and knowledge to the doorstep
-            of Africans on the continent who would otherwise not have the
-            opportunity to pursue careers in aviation. To ensure world class
-            standards of service from day one, Aerojet will utilize a blend of
-            seasoned international professionals and carefully selected local
-            talent to implement its flagship project.
-          </p>
-          <!-- <p class="text-start  text-base sm:text-lg md:text-xl">
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    Following detailed consultations in the host country, the project
+                    has been prioritized by the Government of Ghana to help achieve the
+                    following macro objectives:
+                </p>
+
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    1. To make Kotoka International Airport (KIA) a regional hub thus
+                    stimulating economic growth and development.
+                </p>
+                <p data-aos="fade-up"
+                    class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-12">
+                    2. To help drastically reduce the cost of air travel in the region
+                </p>
+                <p data-aos="fade-up"
+                    class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6 ">
+                    In order to achieve these objectives, the Government of Ghana has
+                    for the first time ever ceded the full responsibility of developing
+                    this critical infrastructure and essential service to Aerojet
+                    Aviation Ltd (a private company).
+                </p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    Aerojet Aviation was established in 2016 to provide a lasting
+                    solution to the problem of aircraft maintenance & repairs
+                    capabilities in Africa; to this end the company aims to o0er a full
+                    scope of technical aviation support services that will serve as a
+                    launchpad for the African air transport industry to thrive. This
+                    will invariably lead to increased routes and lower fares; thus,
+                    making travel e0ortless and accessible. The consequential boost in
+                    air travel will further result in significant economic growth across
+                    the continent.
+                </p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    The state-of-the-art facility to be developed at the Kotoka
+                    International Airport in Accra Ghana, is to serve as a Centre of
+                    Excellence for the delivery of all aviation services and training
+                    scheduled to be o0ered upon completion of the project. Aerojet seeks
+                    to bring aircraft technical training and knowledge to the doorstep
+                    of Africans on the continent who would otherwise not have the
+                    opportunity to pursue careers in aviation. To ensure world class
+                    standards of service from day one, Aerojet will utilize a blend of
+                    seasoned international professionals and carefully selected local
+                    talent to implement its flagship project.
+                </p>
+                <!-- <p class="text-start  text-base sm:text-lg md:text-xl">
             <br />Please check back in a few days!
           </p> -->
+            </div>
+        </section>
+        <section class="w-full  h-[135vh] sm:h-[130vh] md:h-[120vh] relative bg-black" id="mro">
+            <img src="./images/jet1.jpg" alt="" class="h-full w-full object-cover" />
+            <div class="absolute top-0 left-0 w-full h-[135vh] sm:h-[130vh] md:h-[120vh]"
+                style="background-color: #000c2dec; opacity: 0.9"></div>
+            <div class="absolute px-6 md:px-12 py-12 top-0 left-0 transform text-white h-auto ">
+
+                <p class="mb-6 md:mb-12 xl:mb-24 text-3xl sm:text-4xl mb-24 md:text-6xl text-start  text-blue-700 ">
+                    The Aerojet Accra MRO Project</p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    Following detailed consultations in the host country, the project
+                    has been prioritized by the Government of Ghana to help achieve the
+                    following macro objectives:
+                </p>
+
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    1. To make Kotoka International Airport (KIA) a regional hub thus
+                    stimulating economic growth and development.
+                </p>
+                <p data-aos="fade-up"
+                    class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-12">
+                    2. To help drastically reduce the cost of air travel in the region
+                </p>
+                <p data-aos="fade-up"
+                    class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6 ">
+                    In order to achieve these objectives, the Government of Ghana has
+                    for the first time ever ceded the full responsibility of developing
+                    this critical infrastructure and essential service to Aerojet
+                    Aviation Ltd (a private company).
+                </p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    Aerojet Aviation was established in 2016 to provide a lasting
+                    solution to the problem of aircraft maintenance & repairs
+                    capabilities in Africa; to this end the company aims to o0er a full
+                    scope of technical aviation support services that will serve as a
+                    launchpad for the African air transport industry to thrive. This
+                    will invariably lead to increased routes and lower fares; thus,
+                    making travel e0ortless and accessible. The consequential boost in
+                    air travel will further result in significant economic growth across
+                    the continent.
+                </p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    The state-of-the-art facility to be developed at the Kotoka
+                    International Airport in Accra Ghana, is to serve as a Centre of
+                    Excellence for the delivery of all aviation services and training
+                    scheduled to be o0ered upon completion of the project. Aerojet seeks
+                    to bring aircraft technical training and knowledge to the doorstep
+                    of Africans on the continent who would otherwise not have the
+                    opportunity to pursue careers in aviation. To ensure world class
+                    standards of service from day one, Aerojet will utilize a blend of
+                    seasoned international professionals and carefully selected local
+                    talent to implement its flagship project.
+                </p>
+                <!-- <p class="text-start  text-base sm:text-lg md:text-xl">
+          <br />Please check back in a few days!
+        </p> -->
+            </div>
+        </section>
+
+
+    </main>
+    <main class="block md:hidden">
+       
+        <section class="w-full h-screen relative " id="home" ">
+        <img
+      src=" ./images/Marine Services/jet.jpg" alt="" class=" h-full w-full object-cover" />
+        <div class="absolute top-0 left-0 w-full h-screen" style="background-color: #000c2dec; opacity: 0.9"></div>
+        <div
+            class="absolute px-6 md:px-12 top-1/2 left-0 lg:top-1/2 lg:left-1/2 lg:px-0 transform -translate-y-1/2 lg:-translate-x-1/2 text-white">
+            <p data-aos="fade-up" class="text-3xl sm:text-4xl mb-24 md:text-6xl text-start lg:text-center">
+                African Aviation Excellence is here!
+            </p>
+            <p data-aos="fade-up" class="text-start lg:text-center text-base sm:text-lg md:text-xl text-blue-600">
+                We're fixing some stuff in the hangar at the moment.<br />
+                The Aerojet Aviation page isn't gone, we are updating the site for
+                better functionality.<br />
+                We'll be up and running again shortly.
+            </p>
+            <p data-aos="fade-up" class="text-start lg:text-center text-base sm:text-lg md:text-xl uppercase">
+                <br />Please check back in a few days!
+            </p>
         </div>
-      </section>
+        </section>
+        <section class="w-full h-screen hidden lg:relative" id="mro" data-parallax="scroll"
+            data-image-src="./images/jet1.jpg" data-natural-width="3000">
+            <!-- <img src="./images/jet1.jpg" alt="" class="h-full w-full object-cover" /> -->
+            <div class="absolute top-0 left-0 w-full h-screen" style="background-color: #000c2dec; opacity: 0.9"></div>
+            <div class="lg:absolute top-10 px-6 md:px-12 py-4 text-white hidden lg:block">
+                <p data-aos="fade-up"
+                    class="text-3xl sm:text-4xl mb-24 md:text-6xl text-start  text-blue-700 lg:text-center">
+                    The Aerojet Accra MRO Project
+                </p>
+            </div>
+            <div class="absolute px-6 md:px-12 bottom-10 left-0 transform text-white h-auto ">
+                <p data-aos="fade-up"
+                    class="text-3xl sm:text-4xl mb-24 block lg:hidden  md:text-6xl text-start  text-blue-700 lg:text-center">
+                    The Aerojet Accra MRO Project
+                </p>
+
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    Following detailed consultations in the host country, the project
+                    has been prioritized by the Government of Ghana to help achieve the
+                    following macro objectives:
+                </p>
+
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    1. To make Kotoka International Airport (KIA) a regional hub thus
+                    stimulating economic growth and development.
+                </p>
+                <p data-aos="fade-up"
+                    class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-12">
+                    2. To help drastically reduce the cost of air travel in the region
+                </p>
+                <p data-aos="fade-up"
+                    class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6 ">
+                    In order to achieve these objectives, the Government of Ghana has
+                    for the first time ever ceded the full responsibility of developing
+                    this critical infrastructure and essential service to Aerojet
+                    Aviation Ltd (a private company).
+                </p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    Aerojet Aviation was established in 2016 to provide a lasting
+                    solution to the problem of aircraft maintenance & repairs
+                    capabilities in Africa; to this end the company aims to o0er a full
+                    scope of technical aviation support services that will serve as a
+                    launchpad for the African air transport industry to thrive. This
+                    will invariably lead to increased routes and lower fares; thus,
+                    making travel e0ortless and accessible. The consequential boost in
+                    air travel will further result in significant economic growth across
+                    the continent.
+                </p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    The state-of-the-art facility to be developed at the Kotoka
+                    International Airport in Accra Ghana, is to serve as a Centre of
+                    Excellence for the delivery of all aviation services and training
+                    scheduled to be o0ered upon completion of the project. Aerojet seeks
+                    to bring aircraft technical training and knowledge to the doorstep
+                    of Africans on the continent who would otherwise not have the
+                    opportunity to pursue careers in aviation. To ensure world class
+                    standards of service from day one, Aerojet will utilize a blend of
+                    seasoned international professionals and carefully selected local
+                    talent to implement its flagship project.
+                </p>
+                <!-- <p class="text-start  text-base sm:text-lg md:text-xl">
+            <br />Please check back in a few days!
+          </p> -->
+            </div>
+        </section>
+        <section class="w-full  h-[135vh] sm:h-[130vh] md:h-[120vh] relative bg-black" id="mro">
+            <img src="./images/jet1.jpg" alt="" class="h-full w-full object-cover" />
+            <div class="absolute top-0 left-0 w-full h-[135vh] sm:h-[130vh] md:h-[120vh]"
+                style="background-color: #000c2dec; opacity: 0.9"></div>
+            <div class="absolute px-6 md:px-12 py-12 top-0 left-0 transform text-white h-auto ">
+
+                <p class="mb-6 md:mb-12 xl:mb-24 text-3xl sm:text-4xl mb-24 md:text-6xl text-start  text-blue-700 ">
+                    The Aerojet Accra MRO Project</p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    Following detailed consultations in the host country, the project
+                    has been prioritized by the Government of Ghana to help achieve the
+                    following macro objectives:
+                </p>
+
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    1. To make Kotoka International Airport (KIA) a regional hub thus
+                    stimulating economic growth and development.
+                </p>
+                <p data-aos="fade-up"
+                    class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-12">
+                    2. To help drastically reduce the cost of air travel in the region
+                </p>
+                <p data-aos="fade-up"
+                    class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6 ">
+                    In order to achieve these objectives, the Government of Ghana has
+                    for the first time ever ceded the full responsibility of developing
+                    this critical infrastructure and essential service to Aerojet
+                    Aviation Ltd (a private company).
+                </p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    Aerojet Aviation was established in 2016 to provide a lasting
+                    solution to the problem of aircraft maintenance & repairs
+                    capabilities in Africa; to this end the company aims to o0er a full
+                    scope of technical aviation support services that will serve as a
+                    launchpad for the African air transport industry to thrive. This
+                    will invariably lead to increased routes and lower fares; thus,
+                    making travel e0ortless and accessible. The consequential boost in
+                    air travel will further result in significant economic growth across
+                    the continent.
+                </p>
+                <p data-aos="fade-up" class="text-start text-base sm:text-lg md:text-xl w-full md:max-w-screen-lg mb-6">
+                    The state-of-the-art facility to be developed at the Kotoka
+                    International Airport in Accra Ghana, is to serve as a Centre of
+                    Excellence for the delivery of all aviation services and training
+                    scheduled to be o0ered upon completion of the project. Aerojet seeks
+                    to bring aircraft technical training and knowledge to the doorstep
+                    of Africans on the continent who would otherwise not have the
+                    opportunity to pursue careers in aviation. To ensure world class
+                    standards of service from day one, Aerojet will utilize a blend of
+                    seasoned international professionals and carefully selected local
+                    talent to implement its flagship project.
+                </p>
+                <!-- <p class="text-start  text-base sm:text-lg md:text-xl">
+          <br />Please check back in a few days!
+        </p> -->
+            </div>
+        </section>
+
 
     </main>
     <footer>
-      <section class="py-20" style="background: #000c2dec" id="footer">
-        <div class="px-6 md:px-12">
-          <div class="w-full py-8 border-b border-gray-500">
-            <div class="p-4" style="height: auto">
-              <img
-                data-aos="fade-up"
-                src="./images/logoAeroJet.png"
-                alt=""
-                class="w-[120] object-contain mb-6"
-                style="height: 50px !important"
-              />
-              <div
-                data-aos="fade-up"
-                class="text-white md:max-w-screen-lg w-full"
-              >
-                Aerojet is an aviation company focused on providing tailored and
-                professional aviation services across Africa. With a range of
-                specialist knowledge, experience, international exposure and a
-                passion for aviation, we aim to deliver essential but effective
-                services to clients across all our business lines.
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="fade-up"
-            class="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-4 justify-between items-end px-4 py-6 border-b border-gray-500"
-          >
-            <div class="lg:border-r border-gray-500">
-              <p class="font-bold text-white mb-2">Location</p>
-              <ul class="border-b border-gray-500 xl:border-none xl:py-0 py-3">
-                <li
-                  class="text-white hover:text-opacity-70 transition duration-200 text-[#747474]"
-                >
-                  Aerojet Aviation Ltd Suite 1
-                  <br />
-                  MRO Hangars Aerojet Centre
-                  <br />
-                  Kotoka International Airport Accra, Ghana
-                </li>
-              </ul>
-            </div>
-            <div
-              class="border-b border-gray-500 xl:border-none lg:px-6 xl:py-0 py-3"
-            >
-              <ul class="flex items-center gap-6 flex-wrap">
-                <li
-                  class="text-white smoothscroll hover:text-opacity-70 transition duration-200"
-                >
-                  <a href="#home" class="smoothscroll">Home</a>
-                </li>
-                <!-- <li class="text-white  hover:text-opacity-70 transition duration-200"><a href="#services" class="smoothscroll">Services</a>
+        <section class="py-20" style="background: #000c2dec" id="footer">
+            <div class="px-6 md:px-12">
+                <div class="w-full py-8 border-b border-gray-500">
+                    <div class="p-4" style="height: auto">
+                        <img data-aos="fade-up" src="./images/logoAeroJet.png" alt=""
+                            class="w-[120] object-contain mb-6" style="height: 50px !important" />
+                        <div data-aos="fade-up" class="text-white md:max-w-screen-lg w-full">
+                            Aerojet is an aviation company focused on providing tailored and
+                            professional aviation services across Africa. With a range of
+                            specialist knowledge, experience, international exposure and a
+                            passion for aviation, we aim to deliver essential but effective
+                            services to clients across all our business lines.
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up"
+                    class="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-4 justify-between items-end px-4 py-6 border-b border-gray-500">
+                    <div class="lg:border-r border-gray-500">
+                        <p class="font-bold text-white mb-2">Location</p>
+                        <ul class="border-b border-gray-500 xl:border-none xl:py-0 py-3">
+                            <li class="text-white hover:text-opacity-70 transition duration-200 text-[#747474]">
+                                Aerojet Aviation Ltd Suite 1
+                                <br />
+                                MRO Hangars Aerojet Centre
+                                <br />
+                                Kotoka International Airport Accra, Ghana
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border-b border-gray-500 xl:border-none lg:px-6 xl:py-0 py-3">
+                        <ul class="flex items-center gap-6 flex-wrap">
+                            <li class="text-white smoothscroll hover:text-opacity-70 transition duration-200">
+                                <a href="#home" class="smoothscroll">Home</a>
+                            </li>
+                            <!-- <li class="text-white  hover:text-opacity-70 transition duration-200"><a href="#services" class="smoothscroll">Services</a>
                             </li> -->
-                <li
-                  class="text-white smoothscroll hover:text-opacity-70 transition duration-200"
-                >
-                  <a href="#mro" class="smoothscroll">Accra MRO Project </a>
-                </li>
-              </ul>
+                            <li class="text-white smoothscroll hover:text-opacity-70 transition duration-200">
+                                <a href="#mro" class="smoothscroll">Accra MRO Project </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="xl:border-l border-gray-500 xl:px-6">
+                        <p class="font-bold text-white mt-4 mb-2">Contact Us</p>
+                        <ul>
+                            <li class="text-white hover:text-opacity-70 transition duration-200 text-[#747474]">
+                                <a class="text-white hover:text-blue-200" href="mailto:enquiry@aerojet-aviation.com">
+                                    enquiry@aerojet-aviation.com
+                                </a>
+                            </li>
+                            <li class="text-white hover:text-opacity-70 transition duration-200 text-[#747474]">
+                                <a class="text-white hover:text-blue-200"
+                                    href="mailto:aircraftsupport@aerojet-aviation.com">
+                                    aircraftsupport@aerojet-aviation.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex justify-start items-center gap-6 flex-wrap px-4 py-6">
+                    <a class="text-gray-400 hover:text-gray-200 transition duration-200" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28001 9.09 5.11001 7.38 3.00001 4.79C2.63001 5.42 2.42001 6.16 2.42001 6.94C2.42001 8.43 3.17001 9.75 4.33001 10.5C3.62001 10.5 2.96001 10.3 2.38001 10V10.03C2.38001 12.11 3.86001 13.85 5.82001 14.24C5.19074 14.4122 4.5301 14.4362 3.89001 14.31C4.16162 15.1625 4.69355 15.9084 5.41103 16.4429C6.1285 16.9775 6.99546 17.2737 7.89001 17.29C6.37364 18.4904 4.494 19.1393 2.56001 19.13C2.22001 19.13 1.88001 19.11 1.54001 19.07C3.44001 20.29 5.70001 21 8.12001 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                    <a class="text-gray-400 hover:text-gray-200 transition duration-200" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                    <a class="text-gray-400 hover:text-gray-200 transition duration-200" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
-            <div class="xl:border-l border-gray-500 xl:px-6">
-              <p class="font-bold text-white mt-4 mb-2">Contact Us</p>
-              <ul>
-                <li
-                  class="text-white hover:text-opacity-70 transition duration-200 text-[#747474]"
-                >
-                  <a
-                    class="text-white hover:text-blue-200"
-                    href="mailto:enquiry@aerojet-aviation.com"
-                  >
-                    enquiry@aerojet-aviation.com
-                  </a>
-                </li>
-                <li
-                  class="text-white hover:text-opacity-70 transition duration-200 text-[#747474]"
-                >
-                  <a
-                    class="text-white hover:text-blue-200"
-                    href="mailto:aircraftsupport@aerojet-aviation.com"
-                  >
-                    aircraftsupport@aerojet-aviation.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="flex justify-start items-center gap-6 flex-wrap px-4 py-6"
-          >
-            <a
-              class="text-gray-400 hover:text-gray-200 transition duration-200"
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28001 9.09 5.11001 7.38 3.00001 4.79C2.63001 5.42 2.42001 6.16 2.42001 6.94C2.42001 8.43 3.17001 9.75 4.33001 10.5C3.62001 10.5 2.96001 10.3 2.38001 10V10.03C2.38001 12.11 3.86001 13.85 5.82001 14.24C5.19074 14.4122 4.5301 14.4362 3.89001 14.31C4.16162 15.1625 4.69355 15.9084 5.41103 16.4429C6.1285 16.9775 6.99546 17.2737 7.89001 17.29C6.37364 18.4904 4.494 19.1393 2.56001 19.13C2.22001 19.13 1.88001 19.11 1.54001 19.07C3.44001 20.29 5.70001 21 8.12001 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </a>
-            <a
-              class="text-gray-400 hover:text-gray-200 transition duration-200"
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </a>
-            <a
-              class="text-gray-400 hover:text-gray-200 transition duration-200"
-              href="#"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </section>
+        </section>
     </footer>
-  </body>
-  <script src="js/jquery-2.1.3.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script>
+</body>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script>
     const button = document.querySelector("#menu-button");
     const menu = document.querySelector("#menu");
     const links = document.querySelectorAll("#menu a"); // Select all links inside the menu
 
     // Toggle the menu visibility when the menu button is clicked
     button.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
+        menu.classList.toggle("hidden");
     });
 
     // Close the menu when a link is clicked
     links.forEach((link) => {
-      link.addEventListener("click", () => {
-        menu.classList.add("hidden"); // Hide the menu when a link is clicked
-      });
+        link.addEventListener("click", () => {
+            menu.classList.add("hidden"); // Hide the menu when a link is clicked
+        });
     });
-  </script>
+</script>
+
 </html>
