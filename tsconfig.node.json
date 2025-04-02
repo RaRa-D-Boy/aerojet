@@ -7,7 +7,19 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "noEmit": true
+    "noEmit": true,
+    "target": "ES2022",
+    "lib": ["ES2023"],
+
+    /* Bundler mode */
+    "moduleDetection": "force",
+   
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    // "noUncheckedSideEffectImports": true
   },
   "include": ["vite.config.ts"]
 }
