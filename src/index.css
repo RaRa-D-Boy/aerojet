@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    background-color: black;
+    background-image: url('./assets/homeBg.png');
+  }
+
   /* inter var - latin */
   @font-face {
     font-family: 'Inter';
@@ -20,6 +25,13 @@
       pointer;
   }
 
+  .service-bg {
+    background-image: url('./assets/serviceBg.png');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
   /* #region  /**=========== Typography =========== */
   .h0 {
     @apply text-3xl font-bold md:text-5xl;
@@ -51,18 +63,17 @@
   }
   /* #endregion  /**======== Typography =========== */
 
-  .layout {
-    /* 1100px */
+  /* .layout {
     max-width: 68.75rem;
     @apply mx-auto w-11/12;
-  }
+  } */
 
   .bg-dark a.custom-link {
     @apply border-gray-200 hover:border-gray-200/0;
   }
 
   /* Class to adjust with sticky footer */
-  .min-h-main {
+  /* .min-h-main {
     @apply min-h-[calc(100vh-56px)];
-  }
+  } */
 }

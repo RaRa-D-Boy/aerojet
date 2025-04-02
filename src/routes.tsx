@@ -1,9 +1,10 @@
 import { RouteObject } from 'react-router-dom'
 import HomePage from '@/pages/HomePage/HomePage'
-import ProfilePage from '@/pages/ProfilePage/ProfilePage'
 import Root from '@/pages/Root'
-import AboutPage from '@/pages/AboutPage/AboutPage'
 import { RouteName } from './constants/RouteName'
+import MRO from '@/pages/mro/mro'
+import Defense from './pages/defense/defense'
+import Aviation from './pages/aviation/aviation'
 
 export const routes: RouteObject[] = [
   {
@@ -15,12 +16,16 @@ export const routes: RouteObject[] = [
         element: <HomePage />
       },
       {
-        path: RouteName.PROFILE,
-        element: <ProfilePage />
+        path: RouteName.MRO,
+        element: <MRO />
       },
       {
-        path: RouteName.ABOUT,
-        element: <AboutPage />
+        path: RouteName.DEFENSE,
+        element: <Defense />
+      },
+      {
+        path: RouteName.AVIATION,
+        element: <Aviation />
       }
     ]
   }

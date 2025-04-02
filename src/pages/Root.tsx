@@ -1,20 +1,15 @@
 import { Outlet } from 'react-router-dom'
-import TailwindCSSLogo from '@/assets/tailwindcss-icon.svg'
-import ReactLogo from '@/assets/react-icon.svg'
-import ReactRouterLogo from '@/assets/react-router-icon.svg'
 import Navbar from '@/components/Navbar/Navbar'
+import { Footer } from '@/components/footer/footer'
 
 const Root = () => {
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center relative'>
+    <div className='bg-white items-center relative h-auto'>
       <Navbar />
-      <div className='flex space-x-4 mb-6'>
-        <img src={TailwindCSSLogo} className='w-12' />
-        <img src={ReactLogo} className='w-12' />
-        <img src={ReactRouterLogo} className='w-12' />
+      <div className=' w-full '>
+        <Outlet />
       </div>
-      <h1 className='mb-3'>React Starter Template</h1>
-      <Outlet />
+      <Footer/>
     </div>
   )
 }

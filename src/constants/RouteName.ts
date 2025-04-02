@@ -1,7 +1,9 @@
 const NavbarRouteName = {
   PROFILE: '/profile',
   HOME: '/',
-  ABOUT: '/about'
+  MRO: '/mro',
+  DEFENSE: '/defense',
+  AVIATION: '/aviation'
 }
 
 const RouteName = {
