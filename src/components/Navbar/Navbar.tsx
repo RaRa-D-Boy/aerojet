@@ -1,6 +1,4 @@
-
-
-import  { FC, useState } from 'react'
+import { FC, useState } from 'react'
 import { FiArrowRight, FiChevronDown } from 'react-icons/fi'
 import { useMotionValueEvent, AnimatePresence, useScroll, motion } from 'framer-motion'
 import useMeasure from 'react-use-measure'
@@ -9,11 +7,10 @@ import { AeroJet } from '@/assets'
 import { TbMenu } from 'react-icons/tb'
 import { IoCloseOutline } from 'react-icons/io5'
 
-
 interface NavLinkProps {
-  children : React.ReactNode,
-  href:string,
-  FlyoutContent?: React.FC,
+  children: React.ReactNode
+  href: string
+  FlyoutContent?: React.FC
 }
 const Navbar = () => {
   return (
@@ -33,7 +30,7 @@ const FlyoutNav = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full px-6 text-white 
+      className={`sticky top-0 z-50 w-full px-6 text-white 
       transition-all duration-300 ease-out 
       ${scrolled ? 'bg-white py-4' : 'bg-white py-4 shadow-none'}`}
     >
@@ -75,12 +72,12 @@ const Links = () => {
   )
 }
 
-const NavLink:FC<NavLinkProps> = ({ children, href, FlyoutContent }) => {
+const NavLink: FC<NavLinkProps> = ({ children, href, FlyoutContent }) => {
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation() // Get the current pathname
 
   const showFlyout = FlyoutContent && open
-  const isActive = pathname === href // Check if the current link is active
+  const isActive = pathname === href 
 
   return (
     <div
@@ -95,14 +92,14 @@ const NavLink:FC<NavLinkProps> = ({ children, href, FlyoutContent }) => {
           data-aos-delay='200'
           data-aos-duration='1000'
           data-aos-easing='ease-in-out'
-          className={`relative flex px-4 py-2 text-xs rounded-full transition-colors duration-300 ${isActive ? 'bg-[#2880B9] text-white' : 'text-black font-semibold hover:bg-gray-200 '}`}
+          className={`relative flex px-4 py-2 text-sm rounded-full transition-colors duration-300 ${isActive ? 'bg-[#2880B9] text-white' : 'text-black font-semibold hover:bg-gray-200 '}`}
         >
           {children}
           <span
             style={{
               transform: showFlyout ? 'scaleX(1)' : 'scaleX(0)'
             }}
-            className='absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out'
+            className='absolute -bottom-2 -left-2 -right-2 h-1 origin-left scale-x-0 '
           />
         </a>
       </div>
@@ -146,9 +143,15 @@ const AccraMRO = () => {
     <div className='grid h-fit w-full grid-cols-12 shadow-xl lg:h-72 lg:w-[600px] lg:shadow-none xl:w-[750px]'>
       <div className='col-span-12 flex flex-col justify-between bg-[#2880B9] p-6 lg:col-span-4'>
         <div>
-          <h2 className='mb-2 text-xl font-semibold text-white'>
-            AAIRCRAFT MAINTENANCE & REPAIRS (MRO)
-          </h2>
+          <h2 className='mb-2 text-xl font-semibold text-white'>What We Do ?</h2>
+
+         <div className='text-sm'>
+         <p className='py-2 text-white'>EASA Part 145</p>
+          <p className='text-white'>
+            Approved maintenance facility providing high-quality services to keep your aircraft in
+            top condition
+          </p>
+         </div>
         </div>
         <a href='/mro' className='flex items-center gap-1 text-xs text-white hover:underline'>
           Learn more <FiArrowRight />
@@ -156,22 +159,28 @@ const AccraMRO = () => {
       </div>
       <div className='col-span-12 gap-3 bg-white p-6 lg:col-span-8'>
         <p className='mb-6 w-full text-sm text-neutral-600'>
-          One-stop shop for all aspects of maintaining your aircraft with line and base maintenance
-          activities up to D-checks, repair, technical management of entire fleets as well as cabin
-          and other modification programs.
+          Aerojet is an aviation company focused on providing tailored and professional aviation
+          services across Africa. With a range of specialist knowledge, experience, international
+          exposure and a passion for aviation, we aim to deliver essential but effective services to
+          clients across all our business lines.
         </p>
         <div className='col-span-12 grid grid-cols-1 grid-rows-2 gap-1 bg-white  lg:col-span-8'>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
             <li className='text-xs list-disc group-hover:px-3'>
-              AIRFRAME MAINTENANCE AND OVERHAUL
+              <a href="/mro" className='hover:bg-gray-100 p-4 rounded-md w-full'>AIRCRAFT MAINTENANCE & REPAIRS (MRO)</a>
             </li>
           </p>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
-            <li className='text-xs list-disc group-hover:px-3'>LINE MAINTENANCE & AOG </li>
+            <li className='text-xs list-disc group-hover:px-3'>
+            <a href="/defense" className='hover:bg-gray-100 p-4 rounded-md w-full'>DEFENSE & SECURITY</a></li>
           </p>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
             <li className='text-xs list-disc  group-hover:px-3'>
-              FLEET MANAGEMENT AND MAINTENANCE SUPPORT(CAMO){' '}
+            <a href="/aviation" className='hover:bg-gray-100 p-4 rounded-md w-full'> AVIATION CONSULTANCY</a></li>
+          </p>
+          <p className='rounded-lg  bg-white p-3 transition-colors '>
+            <li className='text-xs list-disc  group-hover:px-3'>
+            <a href="#" className='hover:bg-gray-100 p-4 rounded-md w-full'>TECHNICAL TRAINING & CERTIFICATION</a>
             </li>
           </p>
         </div>
@@ -282,10 +291,10 @@ const AccraMRO = () => {
 // }
 
 interface Props {
-  children:React.ReactNode,
-  href:string, 
-  FoldContent?: () => React.ReactNode, // Allow FoldContent to be undefined
-  setMenuOpen:(arg:boolean)=>void, 
+  children: React.ReactNode
+  href: string
+  FoldContent?: () => React.ReactNode // Allow FoldContent to be undefined
+  setMenuOpen: (arg: boolean) => void
 }
 
 const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }: Props) => {
@@ -294,7 +303,7 @@ const MobileMenuLink = ({ children, href, FoldContent, setMenuOpen }: Props) => 
 
   return (
     <div className='relative text-neutral-950'>
-      {FoldContent !== undefined  ? (
+      {FoldContent !== undefined ? (
         <div
           className='flex w-full cursor-pointer items-center justify-between border-b border-neutral-300 py-6 text-start text-2xl font-semibold'
           onClick={() => setOpen((pv) => !pv)}
@@ -402,12 +411,12 @@ const LINKS = [
     href: '/'
   },
   {
-    text: 'Accra MRO Project',
-    href: '/mro',
+    text: 'What We Do',
+    href: '#' ,
     component: AccraMRO
   },
   {
-    text: 'Investors Relations',
+    text: 'Investor Relations',
     href: '#'
     // component: CareersContent
   },

@@ -12,14 +12,14 @@ interface data {
 }
 export const FeaturesGrid: FC<data> = ({ data }) => {
   return (
-    <div className='bg-[#01468B] lg:py-12 mt-2'>
+    <div className='bg-[#01468B] lg:py-12 '>
       {data.map((item: Props, key: number) => (
-        <div className='grid grid-cols-1 lg:grid-cols-2 py-12 px-4 lg:px-0 items-center' key={key}>
+        <div className='grid grid-cols-1 lg:grid-cols-2  px-4 lg:px-0 items-center' key={key}>
           <div className={`order-2  py-6 px-4 lg:p-12 ${item.id % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
           {item.content && item.content()}
             <div className='my-3'>{item?.link}</div>
           </div>
-          <div className={`order-1 ${item.id % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
+          <div className={`order-1  py-6 px-4 lg:p-12 ${item.id % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
             <img
               src={item.image}
               alt=''
