@@ -24,7 +24,7 @@ export const TabsComponent: React.FC<TabProps> = ({ headers, bodies }) => {
           <button
             key={index}
             className={
-              `flex-1 text-sm font-medium py-2 px-4 rounded-lg text-nowrap uppercase transition-colors duration-300
+              `text-sm font-medium py-2 px-4 rounded-lg text-nowrap uppercase transition-colors duration-300 w-full
               ${activeTab === index ? "bg-[#2880B9] text-white" : "text-gray-500 hover:text-gray-700"}`
             }
             onClick={() => setActiveTab(index)}
