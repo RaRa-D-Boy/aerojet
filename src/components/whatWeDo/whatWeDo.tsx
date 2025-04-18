@@ -20,7 +20,7 @@ export const WhatWeDo = () => {
         data-aos-delay='200'
         data-aos-duration='1000'
         data-aos-easing='ease-in-out'
-        className='max-w-screen-lg text-sm text-justify'
+        className='max-w-screen-lg text-sm md:text-lg text-justify'
       >
         Aerojet is an aviation company focused on providing tailored and professional aviation
         services across Africa. With a range of specialist knowledge, experience, international
@@ -32,7 +32,7 @@ export const WhatWeDo = () => {
         data-aos-delay='300'
         data-aos-duration='1000'
         data-aos-easing='ease-in-out'
-        className='py-4 font-bold'
+        className='py-4 font-bold md:text-lg'
       >
         EASA Part 145
       </p>
@@ -41,7 +41,7 @@ export const WhatWeDo = () => {
         data-aos-delay='300'
         data-aos-duration='1000'
         data-aos-easing='ease-in-out'
-        className='text-sm'
+        className='text-sm md:text-lg'
       >
         Approved maintenance facility providing high-quality services to keep your aircraft in top
         condition

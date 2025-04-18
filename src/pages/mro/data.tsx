@@ -1,4 +1,4 @@
-import { HomeBg } from '@/assets'
+import { HomeBg , CardImgService1} from '@/assets'
 
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
 export const Data: Props[] = [
   {
     id: 1,
-    image: HomeBg,
+    image: CardImgService1,
     content: () => (
       <div className='text-white'>
         <p

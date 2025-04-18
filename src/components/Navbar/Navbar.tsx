@@ -1,4 +1,4 @@
-import { FC, useState } from 'react'
+import { FC, useState, useEffect } from 'react'
 import { FiArrowRight, FiChevronDown } from 'react-icons/fi'
 import { useMotionValueEvent, AnimatePresence, useScroll, motion } from 'framer-motion'
 import useMeasure from 'react-use-measure'
@@ -28,9 +28,15 @@ const FlyoutNav = () => {
     setScrolled(latest > 250 ? true : false)
   })
 
+  const [location, setLocation] = useState('/')
+  useEffect(() => {
+    const path = window.location.pathname
+    setLocation(path)
+  }, [])
+
   return (
     <nav
-      className={`sticky top-0 z-50 w-full px-6 text-white 
+      className={`${location === '/' ? 'fixed' : 'sticky'}  top-0 z-50 w-full px-6 text-white 
       transition-all duration-300 ease-out 
       ${scrolled ? 'bg-white py-4' : 'bg-white py-4 shadow-none'}`}
     >
@@ -49,8 +55,11 @@ const FlyoutNav = () => {
 const Logo = () => {
   return (
     <div className='flex items-center gap-2'>
-      <img src={AeroJet} className='w-[150px] h-[40px]' />
-    </div>
+      <a href="/">
+      <img src={AeroJet} className='w-[150px] h-[50px] object-cover' />
+      </a>
+      </div>
+      
   )
 }
 
@@ -61,8 +70,8 @@ const Links = () => {
         {/* <div className=''>logo here</div> */}
 
         {LINKS.map((l) => (
-          <div className='items-end '>
-            <NavLink key={l.text} href={l.href} FlyoutContent={l.component}>
+          <div className='items-end' key={l.text}>
+            <NavLink href={l.href} FlyoutContent={l.component}>
               {l.text}
             </NavLink>
           </div>
@@ -77,7 +86,12 @@ const NavLink: FC<NavLinkProps> = ({ children, href, FlyoutContent }) => {
   const { pathname } = useLocation() // Get the current pathname
 
   const showFlyout = FlyoutContent && open
-  const isActive = pathname === href 
+  
+  // Check if the current path matches any of the service routes
+  const isServiceRoute = ['/mro', '/defense', '/aviation'].includes(pathname)
+  
+  // Set isActive to true if it's the "What We Do" link and we're on a service route
+  const isActive = (href === '#' && children === 'What We Do' && isServiceRoute) || pathname === href
 
   return (
     <div
@@ -145,13 +159,13 @@ const AccraMRO = () => {
         <div>
           <h2 className='mb-2 text-xl font-semibold text-white'>What We Do ?</h2>
 
-         <div className='text-sm'>
-         <p className='py-2 text-white'>EASA Part 145</p>
-          <p className='text-white'>
-            Approved maintenance facility providing high-quality services to keep your aircraft in
-            top condition
-          </p>
-         </div>
+          <div className='text-sm'>
+            <p className='py-2 text-white'>EASA Part 145</p>
+            <p className='text-white'>
+              Approved maintenance facility providing high-quality services to keep your aircraft in
+              top condition
+            </p>
+          </div>
         </div>
         <a href='/mro' className='flex items-center gap-1 text-xs text-white hover:underline'>
           Learn more <FiArrowRight />
@@ -167,20 +181,31 @@ const AccraMRO = () => {
         <div className='col-span-12 grid grid-cols-1 grid-rows-2 gap-1 bg-white  lg:col-span-8'>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
             <li className='text-xs list-disc group-hover:px-3'>
-              <a href="/mro" className='hover:bg-gray-100 p-4 rounded-md w-full'>AIRCRAFT MAINTENANCE & REPAIRS (MRO)</a>
+              <a href='/mro' className='hover:bg-gray-100 p-4 rounded-md w-full'>
+                AIRCRAFT MAINTENANCE & REPAIRS (MRO)
+              </a>
             </li>
           </p>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
             <li className='text-xs list-disc group-hover:px-3'>
-            <a href="/defense" className='hover:bg-gray-100 p-4 rounded-md w-full'>DEFENSE & SECURITY</a></li>
+              <a href='/defense' className='hover:bg-gray-100 p-4 rounded-md w-full'>
+                DEFENSE & SECURITY
+              </a>
+            </li>
           </p>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
             <li className='text-xs list-disc  group-hover:px-3'>
-            <a href="/aviation" className='hover:bg-gray-100 p-4 rounded-md w-full'> AVIATION CONSULTANCY</a></li>
+              <a href='/aviation' className='hover:bg-gray-100 p-4 rounded-md w-full'>
+                {' '}
+                AVIATION CONSULTANCY
+              </a>
+            </li>
           </p>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
             <li className='text-xs list-disc  group-hover:px-3'>
-            <a href="#" className='hover:bg-gray-100 p-4 rounded-md w-full'>TECHNICAL TRAINING & CERTIFICATION</a>
+              <a href='#' className='hover:bg-gray-100 p-4 rounded-md w-full'>
+                TECHNICAL TRAINING & CERTIFICATION
+              </a>
             </li>
           </p>
         </div>
@@ -376,7 +401,7 @@ const MobileMenu = () => {
             className='fixed left-0 top-0 flex h-screen w-full flex-col bg-white'
           >
             <div className='flex items-center justify-between py-6'>
-              <Logo />
+           <Logo />
               <button onClick={() => setOpen(false)}>
                 <IoCloseOutline className='text-3xl text-neutral-950' />
               </button>
@@ -412,7 +437,7 @@ const LINKS = [
   },
   {
     text: 'What We Do',
-    href: '#' ,
+    href: '#',
     component: AccraMRO
   },
   {

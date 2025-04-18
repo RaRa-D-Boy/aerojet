@@ -7,13 +7,13 @@ import { WhatWeDo } from '@/components/whatWeDo/whatWeDo'
 
 const HomePage = () => {
   return (
-    <section className='h-auto bg-white '>
+    <section className='h-auto bg-white ' id="home-section">
       <div className='w-full  md:px-12'>
         <HeroSection
           img={HomeBg}
           cardTitle={'African Aviation Excellence  is here!'}
           cardBody={`We are the leading provider of aircraft maintenance, repair and overhaul services for civil, VIP, government and military aircraft in the West & Central African Region.`}
-          cardNavLink={'#'}
+          cardNavLink={'/service-section'}
           cardNavText={'Explore our services '}
         />
         <WhatWeDo />

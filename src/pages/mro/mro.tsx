@@ -6,11 +6,11 @@ import { tabBodies, tabHeaders } from './constants'
 
 const MRO = () => {
   return (
-    <div className=''>
+    <div id="mro-section">
       <div className='w-full  md:px-12'></div>
       <FeaturesGrid data={Data} />
 
-      <div className='pt-4 pb-24'>
+      <div className='pt-4 pb-24 lg:px-24'>
         <TabsComponent headers={tabHeaders} bodies={tabBodies} />
       </div>
     </div>

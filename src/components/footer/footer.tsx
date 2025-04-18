@@ -28,13 +28,13 @@ export const Footer = () => {
               </div>
             </div>
           </div> */}
-          <div className='flex flex-wrap -mx-4 mb-18'>
+          <div className='grid grid-cols-1 md:grid-cols-3 -mx-4 mb-18'>
             <div className='w-full lg:w-2/5 px-4 mb-12 lg:mb-0'>
               <div className='xs:max-w-xs'>
                 <img src={AeroJetWhite} alt='' className='w-[150px] h-[50px] object-cover' />
               </div>
             </div>
-            <div className='w-full sm:w-1/3 lg:w-1/5 px-4 mb-8 sm:mb-0'>
+            <div className='w-full px-4 mb-8 sm:mb-0'>
               <h5 className='text-lg font-semibold text-gray-50 mb-4'>Services</h5>
               <ul>
                 <li className='mb-4'>
@@ -59,7 +59,7 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className='w-full sm:w-1/3 lg:w-1/5 px-4 mb-8 sm:mb-0'>
+            {/* <div className='w-full sm:w-1/3 lg:w-1/5 px-4 mb-8 sm:mb-0'>
               <h5 className='text-lg font-semibold text-gray-50 mb-3'>About</h5>
               <ul>
                 <li className='mb-4'>
@@ -83,7 +83,7 @@ export const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className='w-full sm:w-1/3 lg:w-1/5 px-4'>
               <h5 className='text-lg font-semibold text-gray-50 mb-4'>Help</h5>
               <ul>

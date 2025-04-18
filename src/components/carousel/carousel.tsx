@@ -174,7 +174,7 @@ const Card = ({ url, category, title, description }: Props) => {
         >
           <span className='text-sm font-semibold uppercase text-[#2880B9]'>{category}</span>
           <p className='my-2 text-xl md:text-2xl font-bold'>{title}</p>
-          <p className='text-sm text-slate-300'>{description}</p>
+          <p className='text-sm md:text-lg text-slate-300'>{description}</p>
         </div>
       </div>
     </>

@@ -8,8 +8,34 @@ interface Props {
   cardNavLink?: string
   cardNavText?: string
 }
+
 const HeroSection: FC<Props> = ({ img, cardTitle, cardBody, cardNavLink, cardNavText }) => {
   const linkAvailability = cardNavLink || ''
+  
+  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    
+    // If it's an external link, let it navigate normally
+    if (targetId.startsWith('http')) {
+      window.location.href = targetId;
+      return;
+    }
+    
+    // Extract the section ID from the link (e.g., '/mro' -> 'mro')
+    const sectionId = targetId.replace('/', '');
+    
+    // Find the element with the matching ID
+    const element = document.getElementById(sectionId);
+    
+    if (element) {
+      // Smooth scroll to the element
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If element not found, navigate to the link
+      window.location.href = targetId;
+    }
+  };
+  
   return (
     <div className='relative h-screen xl:h-full w-full rounded-lg xl:pt-20 '>
       <img
@@ -29,16 +55,17 @@ const HeroSection: FC<Props> = ({ img, cardTitle, cardBody, cardNavLink, cardNav
         <h2 className='text-2xl md:text-4xl font-bold md:text-black text-white'>
           {cardTitle}
         </h2>
-        <div className='text-sm py-5 text-justify md:text-black text-white'>{cardBody}</div>
+        <div className=' text-sm md:text-lg py-5 text-justify md:text-black text-white'>{cardBody}</div>
         <div>
           {linkAvailability !== '' && (
-            <Link
-              to={cardNavLink || '#'}
+            <a
+              href='#'
+              onClick={(e) => handleScrollTo(e, cardNavLink || '#')}
               className=' text-white bg-[#2880B9] px-6 py-2 rounded-full text-xs'
             >
               {' '}
               {cardNavText}{' '}
-            </Link>
+            </a>
           )}
         </div>
       </div>

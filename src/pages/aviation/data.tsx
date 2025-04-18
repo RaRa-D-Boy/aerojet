@@ -1,9 +1,9 @@
-import { HomeBg } from '@/assets'
+import { CardImgService3 } from '@/assets'
 
 export const Data = [
   {
     id: 1,
-    image: HomeBg,
+    image: CardImgService3,
     content: () => (
       <div className='text-white'>
         <div
@@ -14,7 +14,7 @@ export const Data = [
           data-aos-easing='ease-in-out'
         >
           {/* <p className='text-lg text-[#b2e0ff] font-semibold'>Heavy/Base Maintenance </p> */}
-          <p>
+          <p className='text-sm md:text-lg'>
             The Aerojet Consulting Team adopts a structured and meticulous approach to ensuring the
             effective implementation of your goals. Our work would usually begin with a high-level
             review of the existing situation to uncover potential issues and identify areas of

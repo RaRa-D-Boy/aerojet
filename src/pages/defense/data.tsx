@@ -1,9 +1,9 @@
-import { HomeBg } from '@/assets'
+import { HomeBg , CardImgService2} from '@/assets'
 
 export const Data = [
   {
     id: 1,
-    image: HomeBg,
+    image: CardImgService2,
     content: () => (
       <div className='text-white'>
         <div className='rounded-2xl my-2'>
@@ -12,7 +12,7 @@ export const Data = [
             data-aos-delay='200'
             data-aos-duration='1000'
             data-aos-easing='ease-in-out'
-            className='text-xl  font-bold'
+            className='text-sm md:text-lg font-bold'
           >
             Aerojet Defense Technical prides itself in serving African and International Military
             Forces to ensure maximum operational readiness.

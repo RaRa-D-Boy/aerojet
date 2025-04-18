@@ -1,4 +1,4 @@
-import { HomeBg } from '@/assets'
+import { HomeBg, Contact } from '@/assets'
 import { Link } from 'react-router-dom'
 
 export const ContactUs = () => {
@@ -21,7 +21,7 @@ export const ContactUs = () => {
             Ready to experience African Aviation Excellence?
           </p>
           <p
-            className='text-justify py-4 max-w-screen-sm'
+            className='text-justify py-4 max-w-screen-sm text-sm md:text-lg'
             data-aos='fade-up'
             data-aos-delay='200'
             data-aos-duration='1000'
@@ -51,7 +51,7 @@ export const ContactUs = () => {
         </div>
         <div className='order-1 md:order-2 '>
           <img
-            src={HomeBg}
+            src={Contact}
             alt='contactUsImg'
             className='min-h-[350px] w-full rounded-2xl object-cover'
           />
