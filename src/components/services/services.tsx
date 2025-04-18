@@ -1,6 +1,6 @@
-import { HomeBg ,CardImgService1, CardImgService2,CardImgService3,CardImgService4} from '@/assets'
+import { CardImgService1, CardImgService2,CardImgService3,CardImgService4} from '@/assets'
 import { IoIosArrowForward } from 'react-icons/io'
-import { Link } from 'react-router-dom'
+
 
 interface Props {
   img: string

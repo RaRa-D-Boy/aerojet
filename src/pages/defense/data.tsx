@@ -1,4 +1,4 @@
-import { HomeBg , CardImgService2} from '@/assets'
+import { CardImgService2} from '@/assets'
 
 export const Data = [
   {

@@ -1,4 +1,4 @@
-import { HomeBg, Contact } from '@/assets'
+import { Contact } from '@/assets'
 import { Link } from 'react-router-dom'
 
 export const ContactUs = () => {

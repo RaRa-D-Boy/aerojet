@@ -1,4 +1,4 @@
-import { HomeBg , CardImgService1} from '@/assets'
+import { CardImgService1} from '@/assets'
 
 
 interface Props {

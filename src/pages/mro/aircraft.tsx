@@ -1,4 +1,4 @@
-import { HomeBg , Maintenance1 , Maintenance2} from '@/assets'
+import {  Maintenance1 , Maintenance2} from '@/assets'
 import { IoLocationSharp } from 'react-icons/io5'
 
 const Aircraft = () => {
