@@ -5,7 +5,7 @@ import { TabsComponent } from '@/components/tabs/tabs'
 const Aviation = () => {
   const tabHeaders = [
     'AIRCRAFT LEASING',
-    'AIRLEGISLATIONCOMPLIANCE',
+    'AIR LEGISLATION COMPLIANCE',
     'SAFETY PLANNING & COMPLIANCE'
   ]
   const tabBodies = [

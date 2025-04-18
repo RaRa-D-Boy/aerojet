@@ -36,7 +36,7 @@ const FlyoutNav = () => {
 
   return (
     <nav
-      className={`${location === '/' ? 'fixed' : 'sticky'}  top-0 z-50 w-full px-6 text-white 
+      className={`${location === '/' ? 'fixed' : 'sticky'}  top-0 z-50 w-full  md:px-6 text-white 
       transition-all duration-300 ease-out 
       ${scrolled ? 'bg-white py-4' : 'bg-white py-4 shadow-none'}`}
     >
@@ -56,7 +56,7 @@ const Logo = () => {
   return (
     <div className='flex items-center gap-2'>
       <a href="/">
-      <img src={AeroJet} className='w-[150px] h-[50px] object-cover' />
+      <img src={AeroJet} className='w-[120px] h-[40px] md:w-[150px] md:h-[50px] object-cover' />
       </a>
       </div>
       
