@@ -1,4 +1,4 @@
-import { AviationImg, CardImgService3 } from '@/assets'
+import { AviationImg } from '@/assets'
 
 export const Data = [
   {

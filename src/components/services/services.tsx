@@ -1,5 +1,4 @@
-import { CardImgService1, CardImgService2, CardImgService3, CardImgService4 } from '@/assets'
-// import { IoIosArrowForward } from 'react-icons/io'
+import { CardImgService1, CardImgService2, CardImgService4 } from '@/assets'
 
 interface Props {
   img: string
