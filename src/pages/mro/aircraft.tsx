@@ -1,5 +1,6 @@
-import {  Maintenance1 , Maintenance2} from '@/assets'
-import { IoLocationSharp } from 'react-icons/io5'
+import {  Cabin, Component, Maintenance1 , Maintenance2, Structural} from '@/assets'
+import { MapPin } from 'lucide-react'
+
 
 const Aircraft = () => {
   return (
@@ -31,7 +32,7 @@ const Aircraft = () => {
             </div>
             <div className='p-6 bg-gray-100'>
               <h3 className='text-xl font-bold mb-2 flex items-center'>
-                <IoLocationSharp className='mr-2 h-5 w-5' />
+              <MapPin  className='mr-2 h-5 w-5' />
                 Accra Location
               </h3>
               <p className='text-slate-600 text-justify text-sm md:text-lg'>
@@ -47,7 +48,8 @@ const Aircraft = () => {
             </div>
             <div className='p-6 bg-gray-100'>
               <h3 className='text-xl font-bold mb-2 flex items-center'>
-                <IoLocationSharp className='mr-2 h-5 w-5' /> Tamale Location
+              <MapPin  className='mr-2 h-5 w-5' />
+                Tamale Location
               </h3>
               <p className='text-slate-600 text-justify text-sm md:text-lg'>
                 Our Tamale facility extends our reach across Ghana, providing convenient maintenance
@@ -62,6 +64,9 @@ const Aircraft = () => {
         </p>
         <div className='grid grid-cols-1 xl:grid-cols-3 gap-3'>
           <div className='bg-gray-100 p-8 rounded-lg'>
+          <div className='relative h-auto'>
+              <img src={Cabin} alt='Tamale Hangar' className='min-h-[300px] max-h-[300px] rounded-lg w-full object-cover' />
+            </div>
             <p className='text-sm md:text-lg font-bold py-4'>Cabin Modifications</p>
             <p className='text-justify text-sm md:text-lg'>
               Equip your fleet with modern appealing customized cabins that reflect your airline’s
@@ -70,7 +75,10 @@ const Aircraft = () => {
             </p>
           </div>
           <div className='bg-gray-100 p-8 rounded-lg'>
-            <p className='text-sm md:text-lgfont-bold py-4'>Structural Repair & Composites</p>
+          <div className='relative h-auto'>
+              <img src={Structural} alt='Tamale Hangar' className='min-h-[300px] max-h-[300px] rounded-lg w-full object-cover' />
+            </div>
+            <p className='text-sm md:text-lg font-bold py-4'>Structural Repair & Composites</p>
             <p className='text-justify text-sm md:text-lg'>
               Our Structural repair shop performs maintenance repair and modification on aircraft
               structural parts. In addition, detailed works such as Replacement of fuselage panels,
@@ -85,6 +93,9 @@ const Aircraft = () => {
             </p>
           </div>
           <div className='bg-gray-100 p-8 rounded-lg'>
+          <div className='relative h-auto'>
+              <img src={Component} alt='Tamale Hangar' className='min-h-[300px] max-h-[300px] rounded-lg w-full object-cover' />
+            </div>
             <p className='text-sm md:text-lg font-bold py-4'>Component Repair, Testing & Overhaul</p>
             <p className='text-justify text-sm md:text-lg'>
               Repairs and overhauls as well as modifications are all managed on your behalf. Our

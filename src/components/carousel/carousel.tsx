@@ -1,7 +1,7 @@
 import { HomeBg } from '@/assets'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
+import { ChevronLeft, ChevronRight, } from 'lucide-react'
 import useMeasure from 'react-use-measure'
 
 const CARD_WIDTH = 350
@@ -133,7 +133,7 @@ const CardCarousel = () => {
             className='absolute left-0 top-[60%] z-30 rounded-r-xl bg-slate-100/30 py-3  pl-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pl-3'
             onClick={shiftLeft}
           >
-            <FiChevronLeft />
+            <ChevronLeft />
           </motion.button>
           <motion.button
             initial={false}
@@ -143,7 +143,7 @@ const CardCarousel = () => {
             className='absolute right-0 top-[60%] z-30 rounded-l-xl bg-slate-100/30 p-3 pr-2 text-4xl text-white backdrop-blur-sm transition-[padding] hover:pr-3'
             onClick={shiftRight}
           >
-            <FiChevronRight />
+            <ChevronRight />
           </motion.button>
         </>
       </div>

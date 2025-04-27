@@ -1,3 +1,5 @@
+import { Casualty, LineMain } from "@/assets"
+
 const LineMaintenance = () => {
   return (
     <section className='pt-16 pb-2 bg-white'>
@@ -7,6 +9,9 @@ const LineMaintenance = () => {
             Accra is our home...Who better to look after you as a guest.
           </h2>
           <p className='text-xl text-slate-600 '>We turn you around safely and on time.</p>
+          <div className='relative h-auto'>
+              <img src={LineMain} alt='Tamale Hangar' className='min-h-[300px] md:min-h-[600px] max-h-[300px] rounded-lg w-full object-cover my-3' />
+            </div>
         </div>
 
         <div className=' mx-auto mb-12 px-4'>
@@ -36,6 +41,9 @@ const LineMaintenance = () => {
 
           <div className='bg-gray-100 p-8 rounded-lg'>
             <p className='text-base font-bold pb-4'>Casualty / AOG Support</p>
+            <div className='relative h-auto'>
+              <img src={Casualty} alt='Tamale Hangar' className='min-h-[300px]  max-h-[300px] rounded-lg w-full object-cover my-3' />
+            </div>
             <p>
               We understand how damage to an aircraft without prompt response and attention can
               cause significant inconvenience to airline operations and revenue. To tackle these

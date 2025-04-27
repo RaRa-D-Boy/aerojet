@@ -1,9 +1,9 @@
-import { CardImgService3 } from '@/assets'
+import { AviationImg, CardImgService3 } from '@/assets'
 
 export const Data = [
   {
     id: 1,
-    image: CardImgService3,
+    image: AviationImg,
     content: () => (
       <div className='text-white'>
         <div

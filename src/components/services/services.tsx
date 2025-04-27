@@ -1,6 +1,5 @@
-import { CardImgService1, CardImgService2,CardImgService3,CardImgService4} from '@/assets'
-import { IoIosArrowForward } from 'react-icons/io'
-
+import { CardImgService1, CardImgService2, CardImgService3, CardImgService4 } from '@/assets'
+// import { IoIosArrowForward } from 'react-icons/io'
 
 interface Props {
   img: string
@@ -13,31 +12,32 @@ const Items = [
   {
     img: CardImgService1,
     title: 'AIRCRAFT MAINTENANCE & REPAIRS (MRO)',
-    body: 'One-stop shop for all aspects of maintaining your aircraft with line and base maintenance activities up to D-checks, repair, technical management of entire fleets as well as cabin and other modification programs.',
+    body: 'Your one-stop shop for maintaining all your assets',
     link: '/mro'
-  },
-  {
-    img: CardImgService2,
-    title: 'DEFENSE & SECURITY',
-    body: 'Aerojet Defense Technical prides itself in serving African and International Military Forces to ensure maximum operational readiness.',
-    link: '/defense'
-  },
-  {
-    img: CardImgService3,
-    title: 'AVIATION CONSULTANCY',
-    body: 'The Aerojet Consulting Team adopts a structured and meticulous approach to ensuring the effective implementation of your goals. Our work would usually begin with a high-level review of the existing situation to uncover potential issues and identify areas of improvement. A well though through and sustainable improvement plan will then be developed and put forward with and for you in each of the relevant areas.',
-    link: '/aviation'
   },
   {
     img: CardImgService4,
     title: 'TECHNICAL TRAINING & CERTIFICATION',
-    body: 'provides first class aviation certification and skills training for the region. Our engineering programs target every level from skilled mechanics and Technicians to Licensed Aircraft Engineers (LAEs). Additional courses such as Type Ratings, continuation training and Aviation Management courses.',
+    body: 'provides first class aviation certification and skills training for the African continent.',
     link: 'https://aerojet-academy.com/'
-  }
+  },
+  {
+    img: CardImgService2,
+    title: 'DEFENSE & SECURITY',
+    body: 'Enhancing security and defence operational readiness with efficient technical support',
+    link: '/defense'
+  },
+  // {
+  //   img: CardImgService3,
+  //   title: 'AVIATION CONSULTANCY',
+  //   body: 'The Aerojet Consulting Team adopts a structured and meticulous approach to ensuring the effective implementation of your goals. Our work would usually begin with a high-level review of the existing situation to uncover potential issues and identify areas of improvement. A well though through and sustainable improvement plan will then be developed and put forward with and for you in each of the relevant areas.',
+  //   link: '/aviation'
+  // },
+  
 ]
 export const ServicesSection = () => {
   return (
-    <div className='service-bg lg:p-12 py-12 px-4' id="service-section">
+    <div className='service-bg lg:p-12 py-12 px-4' id='service-section'>
       <div className='py-12'>
         <p
           data-aos='fade-up'
@@ -45,27 +45,20 @@ export const ServicesSection = () => {
           data-aos-easing='ease-in-out'
           className='text-2xl text-[#2880B9] md:text-4xl font-bold'
         >
-          OUR SERVICE
+          OUR SERVICES
         </p>
-        <p
-          data-aos='fade-up'
-          data-aos-duration='1000'
-          data-aos-easing='ease-in-out'
-          className='w-full md:max-2-screen-md text-justify text-sm md:text-lg text-black'
-        >
-          Whether you are a flag carrier, a lessor or a low-cost airline, we are your one-stop shop
-          for all aspects of maintaining your aircraft.
-        </p>
+       
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3'>
         {Items.map((list: Props, key: number) => (
-          <div
+          <a
+            href={list.link}
             data-aos='fade-up'
             data-aos-delay='100'
             data-aos-duration='1000'
             data-aos-easing='ease-in-out'
-            className='bg-[#2880B9] rounded-2xl flex flex-col h-full'
+            className='bg-[#2880B9] group rounded-2xl flex flex-col h-full'
             key={key}
           >
             <img
@@ -77,28 +70,26 @@ export const ServicesSection = () => {
               data-aos-duration='1000'
               data-aos-easing='ease-in-out'
             />
-            <div
-              className='p-4 text-white flex-grow'
+            <span
+              className='px-8 pt-4 pb-8 text-white flex-grow font-bold'
               data-aos='fade-up'
               data-aos-delay='200'
               data-aos-duration='1000'
               data-aos-easing='ease-in-out'
             >
-              <p className='py-3 font-bold'>{list.title}</p>
-              <p className='pb-1 text-sm md:text-lg text-justify'>{list.body}</p>
-            </div>
-            <div
-              className='mt-auto flex flex-col p-4'
+              {list.title}
+              <p className='pb-1 text-sm  font-normal text-justify'>{list.body}</p>
+            </span>
+            <span
+              className='mt-auto hidden text-white hover:text-blue-950 hover:font-semibold text-sm group-hover:flex flex-col px-8 pb-3'
               data-aos='fade-up'
               data-aos-delay='300'
               data-aos-duration='1000'
               data-aos-easing='ease-in-out'
             >
-              <a href={list.link} className='text-sm text-white flex gap-3 items-center'>
-                Learn more <IoIosArrowForward className=' text-white' />
-              </a>
-            </div>
-          </div>
+              Learn more
+            </span>
+          </a>
         ))}
       </div>
     </div>

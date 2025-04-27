@@ -1,6 +1,7 @@
 import { FeaturesGrid } from '@/components/featureGrid/featuresGrid'
 import { Data } from './data'
 import { TabsComponent } from '@/components/tabs/tabs'
+import { Advance, DefenceImg, IntelSecurity, Unmanned } from '@/assets'
 
 const Defense = () => {
   const tabHeaders = [
@@ -12,6 +13,11 @@ const Defense = () => {
   ]
   const tabBodies = [
     <div className='px-8 w-full  '>
+      <img
+        src={DefenceImg}
+        alt='Tamale Hangar'
+        className='min-h-[300px] md:min-h-[600px] max-h-[300px] rounded-lg w-full object-cover my-3'
+      />
       <p className='py-3 text-justify text-sm md:text-lg'>
         <span className='underlined text-blue-500'>Aerojet Defense Technical </span>prides itself in
         serving African and International Military Forces to ensure maximum operational readiness.
@@ -20,14 +26,21 @@ const Defense = () => {
         partners. We support missions into and wsithin Africa.
       </p>
       <p className='text-justify'>
-        <span className='underlined text-blue-500 text-sm md:text-lg'>Special Air Operations Unit </span> – We provide
-        all round support for government aircraft providing excellent technical and logistical
-        support. From modifications and conversions that turn civilian aircraft into government
-        planes, these operations are typically conducted in partnership with the Ministry of Defense
-        of a country or territory.
+        <span className='underlined text-blue-500 text-sm md:text-lg'>
+          Special Air Operations Unit{' '}
+        </span>{' '}
+        – We provide all round support for government aircraft providing excellent technical and
+        logistical support. From modifications and conversions that turn civilian aircraft into
+        government planes, these operations are typically conducted in partnership with the Ministry
+        of Defense of a country or territory.
       </p>
     </div>,
     <div className='px-8 w-full  text-justify text-sm md:text-lg'>
+      <img
+        src={Unmanned}
+        alt='Tamale Hangar'
+        className='min-h-[300px] md:min-h-[600px] max-h-[300px] rounded-lg w-full object-contain my-3'
+      />
       Aerojet’s Unmanned Systems division custom manufactures tactical drones for African military
       forces. Due to the varying needs, operational environments and specific threats faced by
       various countries in our sub region, an off-the-shelf product often fails to meet operational
@@ -38,6 +51,11 @@ const Defense = () => {
       pace of technology.
     </div>,
     <div className='px-8 w-full text-sm md:text-lg'>
+      <img
+        src={IntelSecurity}
+        alt='Tamale Hangar'
+        className='min-h-[300px] md:min-h-[600px] max-h-[300px] rounded-lg w-full object-cover my-3'
+      />
       <ul>
         <li className='list-disc'>Camera, access control, base camp monitoring solutions.</li>
         <li className='list-disc'>
@@ -45,7 +63,12 @@ const Defense = () => {
         </li>
       </ul>
     </div>,
-     <div className='px-8 w-full  text-sm md:text-lg'>
+    <div className='px-8 w-full  text-sm md:text-lg'>
+      <img
+        src={Advance}
+        alt='Tamale Hangar'
+        className='min-h-[300px] md:min-h-[700px] max-h-[300px] rounded-lg w-full object-cover my-3'
+      />
       <ul>
         <li className='list-disc'>Warfare & Mission Planning Training</li>
         <li className='list-disc'>
@@ -55,7 +78,7 @@ const Defense = () => {
         <li className='list-disc'>Air Traffic Control and Flight Simulation Recurring Training</li>
       </ul>
     </div>,
-   <div className='px-8 w-full  text-sm md:text-lg'>
+    <div className='px-8 w-full  text-sm md:text-lg'>
       <ul>
         <li className='list-disc'>BOSIET/ HUET/Sea Survival Training</li>
         <li className='list-disc'>Aircraft Emergency Escape </li>
@@ -65,7 +88,7 @@ const Defense = () => {
     </div>
   ]
   return (
-    <div id="defense-section">
+    <div id='defense-section'>
       <div className='w-full  md:px-12'></div>
       <FeaturesGrid data={Data} />
 

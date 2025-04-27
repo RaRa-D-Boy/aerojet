@@ -1,6 +1,7 @@
 import { FeaturesGrid } from '@/components/featureGrid/featuresGrid'
 import { Data } from './data'
 import { TabsComponent } from '@/components/tabs/tabs'
+import { AircraftLeasing1, Engineering1 ,Engineering2,Engineering3} from '@/assets'
 
 const Aviation = () => {
   const tabHeaders = [
@@ -11,6 +12,11 @@ const Aviation = () => {
   const tabBodies = [
     <div className='px-8 w-full  '>
          <p className='py-3 text-justify text-sm md:text-lg'>
+         <img
+            src={AircraftLeasing1}
+            alt='Tamale Hangar'
+            className='min-h-[300px] md:min-h-[600px] max-h-[300px] rounded-lg w-full object-cover my-3'
+          />
         We provide aircraft on ACMI Wet or dry Lease basis for both Airlines and Oil & Gas clients.
         Aircraft leasing accounts for nearly half of the world's commercial fleet. The ownership and
         management aircraft can be a challenging process. We offer full technical support along the
@@ -18,12 +24,18 @@ const Aviation = () => {
         aircraft and engines. We support you with the airworthiness of your leased asset.
       </p>
     </div>,
-    <div className='grid grid-cols-1 lg:grid-cols-3 gap-3'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3'>
       <div className='bg-gray-100 p-8 rounded-lg'>
+      <img
+            src={Engineering1}
+            alt='Tamale Hangar'
+            className='min-h-[300px]  max-h-[300px] rounded-lg w-full object-cover my-3'
+          />
         <p className='font-bold py-4 text-sm md:text-lg'>
           Engineering & Maintenance (MRO – Part 145 Compliance){' '}
         </p>
         <p className='text-justify text-sm md:text-lg'>
+
           Our team of highly experienced technical experts in this field have worked previously at
           senior level in commercial aviation; MROs, design and engineering, component support,
           engine overhaul, and national regulators. Based on this wide-ranging experience and
@@ -32,6 +44,11 @@ const Aviation = () => {
         </p>
       </div>
       <div className='bg-gray-100 p-8 rounded-lg'>
+      <img
+            src={Engineering2}
+            alt='Tamale Hangar'
+            className='min-h-[300px]  max-h-[300px] rounded-lg w-full object-cover my-3'
+          />
         <p className='text-sm md:text-lg font-bold py-4'>
           Engineering & Maintenance Personnel Training (Part 66 & Part 147 Compliance){' '}
         </p>
@@ -45,6 +62,11 @@ const Aviation = () => {
         </p>
       </div>
       <div className='bg-gray-100 p-8 rounded-lg'>
+      <img
+            src={Engineering3}
+            alt='Tamale Hangar'
+            className='min-h-[300px]  max-h-[300px] rounded-lg w-full object-cover my-3'
+          />
         <p className='text-sm md:text-lg font-bold py-4'>Airline CAMO Compliance</p>
         <p className='text-justify text-sm md:text-lg'>
           Our consultants will walk you through every step of compliance to keep your organization
