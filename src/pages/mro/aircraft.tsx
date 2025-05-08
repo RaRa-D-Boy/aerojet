@@ -85,25 +85,29 @@ const Aircraft = () => {
               Winglet Modification, Engine strut replacement, passenger aircraft to cargo conversion
               with a major structural repair involvement.
             </p>
-            <p className='text-sm md:text-lg font-bold py-4'>Composite</p>
-            <p className='text-justify text-sm md:text-lg'>
-              Our composite shop performs maintenance repair, on Thrust reverser, rudder, elevator
-              and spoiler components including composite materials. Composite repair has quickly
-              become one of the biggest elements of structural repairs on modern aircraft.
-            </p>
+            
           </div>
           <div className='bg-gray-100 p-8 rounded-lg'>
           <div className='relative h-auto'>
               <img src={Component} alt='Tamale Hangar' className='min-h-[300px] max-h-[300px] rounded-lg w-full object-cover' />
             </div>
-            <p className='text-sm md:text-lg font-bold py-4'>Component Repair, Testing & Overhaul</p>
+            <p className='text-sm md:text-lg font-bold py-4'>Composites</p>
+            <p className='text-justify text-sm md:text-lg'>
+              Our composite shop performs maintenance repair, on Thrust reverser, rudder, elevator
+              and spoiler components including composite materials. Composite repair has quickly
+              become one of the biggest elements of structural repairs on modern aircraft.
+            </p>
+
+
+           
+          </div>
+        </div>
+        {/* Services Tabs */}
+        <p className='text-sm md:text-lg font-bold py-4'>Component Repair, Testing & Overhaul</p>
             <p className='text-justify text-sm md:text-lg'>
               Repairs and overhauls as well as modifications are all managed on your behalf. Our
               experienced engineering team works continuously on reliability improvements
             </p>
-          </div>
-        </div>
-        {/* Services Tabs */}
       </div>
     </section>
   )

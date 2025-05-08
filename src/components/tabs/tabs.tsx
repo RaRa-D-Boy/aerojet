@@ -19,12 +19,12 @@ export const TabsComponent: React.FC<TabProps> = ({ headers, bodies }) => {
 
   return (
     <div className="w-full px-2 md:px-12">
-      <div className="flex flex-nowrap overflow-x-auto space-x-1 rounded-lg bg-gray-100 p-2">
+      <div className="flex flex-wrap overflow-x-auto space-x-1 rounded-lg bg-gray-100 p-2">
         {headers.map((header, index) => (
           <button
             key={index}
             className={
-              `text-xs md:text-sm font-semibold md:font-medium py-2 px-4 rounded-lg text-nowrap uppercase transition-colors duration-300 min-w-[300px] w-auto
+              `text-xs text-start  md:text-center md:text-sm font-semibold md:font-medium py-2 px-4 rounded-lg text-nowrap uppercase transition-colors duration-300 min-w-[300px] w-auto
               ${activeTab === index ? "bg-[#2880B9] text-white" : "text-gray-500 hover:text-gray-700"}`
             }
             onClick={() => setActiveTab(index)}

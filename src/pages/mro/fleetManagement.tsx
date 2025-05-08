@@ -5,11 +5,11 @@ const FleetManagement = () => {
     <section className='pt-16 pb-2 bg-white'>
       <div className=' px-4'>
         <div className='text-start mb-12'>
-          <h2 className='text-3xl font-bold mb-4'>
+          <h2 className='text-3xl font-bold mb-4 '>
             Our services include the below and any other maintenance and technical support you may
             need{' '}
           </h2>
-          <p className='text-xl text-slate-600 '>
+          <p className=' text-slate-600 '>
             We take care of your fleet so you can focus on your core business of running the
             airline:
           </p>

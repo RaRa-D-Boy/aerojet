@@ -25,25 +25,27 @@ const LineMaintenance = () => {
 
             <li className='list-disc'>On wing Borescope & NDT inspection</li>
           </ul>
-        </div>
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
-          <div className='bg-gray-100 p-8 rounded-lg'>
-            {/* <p className='text-base font-bold py-4'>Cabin Modifications</p> */}
-            <p>
+          <p className="my-3">
               We operate and deliver excellent line maintenance support for a broad range of
               aircraft types, including new generations such as Airbus A320neo, A350, Boeing 737 Max
               and Boeing 787. Our highly qualified workforce is ready to provide you with a 24/7
               technical support and to release your aircraft according to EASA 145 and other
               National Aviation Authority approvals.
             </p>
+        </div>
+
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-3'>
+          <div className='bg-gray-100 p-8 rounded-lg'>
+            {/* <p className='text-base font-bold py-4'>Cabin Modifications</p> */}
+            <div className='relative h-auto'>
+              <img src={Casualty} alt='Tamale Hangar' className='min-h-[300px]  max-h-[300px] rounded-lg w-full object-cover my-3' />
+            </div>
           </div>
 
           <div className='bg-gray-100 p-8 rounded-lg'>
             <p className='text-base font-bold pb-4'>Casualty / AOG Support</p>
-            <div className='relative h-auto'>
-              <img src={Casualty} alt='Tamale Hangar' className='min-h-[300px]  max-h-[300px] rounded-lg w-full object-cover my-3' />
-            </div>
+            
             <p>
               We understand how damage to an aircraft without prompt response and attention can
               cause significant inconvenience to airline operations and revenue. To tackle these

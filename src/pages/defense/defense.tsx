@@ -9,7 +9,7 @@ const Defense = () => {
     'UNMANNED SYSTEMS ',
     'INTELLIGENT SECURITY & SURVEILLANCE ',
     'ADVANCE TRAINING & SIMULATION SYSTEMS',
-    'CERTIFICATION TRAINING and MEDICALS'
+    // 'CERTIFICATION TRAINING and MEDICALS'
   ]
   const tabBodies = [
     <div className='px-8 w-full  '>
@@ -67,7 +67,7 @@ const Defense = () => {
       <img
         src={Advance}
         alt='Tamale Hangar'
-        className='min-h-[300px] md:min-h-[700px] max-h-[300px] rounded-lg w-full object-cover my-3'
+        className='min-h-[300px] md:min-h-[560px] max-h-[300px] rounded-lg w-full object-cover my-3'
       />
       <ul>
         <li className='list-disc'>Warfare & Mission Planning Training</li>
@@ -77,15 +77,17 @@ const Defense = () => {
         </li>
         <li className='list-disc'>Air Traffic Control and Flight Simulation Recurring Training</li>
       </ul>
-    </div>,
-    <div className='px-8 w-full  text-sm md:text-lg'>
-      <ul>
+      <div className='w-full  text-sm md:text-lg py-4'>
+        <p className='font-semibold'>CERTIFICATION TRAINING AND MEDICALS</p>
+      <ul className='pb-3'>
         <li className='list-disc'>BOSIET/ HUET/Sea Survival Training</li>
         <li className='list-disc'>Aircraft Emergency Escape </li>
         <li className='list-disc'>Aeromedicals</li>
         <li className='list-disc'>Offshore Medicals</li>
       </ul>
     </div>
+    </div>,
+    
   ]
   return (
     <div id='defense-section'>

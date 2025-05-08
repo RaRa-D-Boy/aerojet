@@ -125,10 +125,10 @@ const NavLink: FC<NavLinkProps> = ({ children, href, FlyoutContent }) => {
             exit={{ opacity: 0, y: 15 }}
             style={{ translateX: '-50%' }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className='absolute left-1/2 top-12 bg-white text-black'
+            className='absolute left-1/2 top-12  text-black'
           >
             <div className='absolute -top-6 left-0 right-0 h-6 bg-transparent' />
-            <div className='absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white' />
+            <div className='absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45' />
             {typeof FlyoutContent === 'function' ? <FlyoutContent /> : null}
           </motion.div>
         )}
@@ -141,37 +141,35 @@ const NavLink: FC<NavLinkProps> = ({ children, href, FlyoutContent }) => {
 
 const AccraMRO = () => {
   return (
-    <div className='grid h-fit w-full grid-cols-12 shadow-xl lg:h-72 lg:w-[600px] lg:shadow-none xl:w-[750px]'>
-      <div className='col-span-12 flex flex-col justify-between bg-[#2880B9] p-6 lg:col-span-4'>
+    <div className=' h-fit w-auto  shadow-xl lg:w-[400px] lg:shadow-none xl:w-[400px] rounded-2xl bg-white'>
+      {/* <div className='col-span-12 flex flex-col justify-between bg-[#2880B9] p-6 lg:col-span-4'>
         <div>
           <h2 className='mb-2 text-xl font-semibold text-white'>What We Do ?</h2>
-          {/* <a href='/mro' className='flex items-center gap-1 text-xs text-white hover:underline'>
-          Learn more <FiArrowRight />
-        </a> */}
+          
           
         </div>
        
-      </div>
-      <div className='col-span-12 gap-3 bg-white p-6 lg:col-span-8'>
+      </div> */}
+      <div className='rounded-xl gap-3  p-6 '>
         
-        <div className='col-span-12 grid grid-cols-1 grid-rows-2 gap-1 bg-white  lg:col-span-8'>
-          <p className='rounded-lg  bg-white p-3 transition-colors '>
+        <div className='col-span-12 grid grid-cols-1 grid-rows-2 gap-1 rounded-xl  lg:col-span-8'>
+          <p className='rounded-lg   p-3 transition-colors '>
             <li className='text-xs list-disc group-hover:px-3'>
-              <a href='/mro' className='hover:bg-gray-100 p-4 rounded-md w-full'>
+              <a href='/mro' className='hover:bg-gray-100 hover:text-[#2880B9] p-4 rounded-md w-full'>
                 AIRCRAFT MAINTENANCE & REPAIRS (MRO)
               </a>
             </li>
           </p>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
             <li className='text-xs list-disc group-hover:px-3'>
-              <a href='/defense' className='hover:bg-gray-100 p-4 rounded-md w-full'>
+              <a href='/defense' className='hover:bg-gray-100 hover:text-[#2880B9] p-4 rounded-md w-full'>
                 DEFENSE & SECURITY
               </a>
             </li>
           </p>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
             <li className='text-xs list-disc  group-hover:px-3'>
-              <a href='/aviation' className='hover:bg-gray-100 p-4 rounded-md w-full'>
+              <a href='/aviation' className='hover:bg-gray-100 hover:text-[#2880B9] p-4 rounded-md w-full'>
                 {' '}
                 AVIATION CONSULTANCY
               </a>
@@ -179,7 +177,7 @@ const AccraMRO = () => {
           </p>
           <p className='rounded-lg  bg-white p-3 transition-colors '>
             <li className='text-xs list-disc  group-hover:px-3'>
-              <a href='#' className='hover:bg-gray-100 p-4 rounded-md w-full'>
+              <a href='#' className='hover:bg-gray-100 hover:text-[#2880B9]  p-4 rounded-md w-full'>
                 TECHNICAL TRAINING & CERTIFICATION
               </a>
             </li>

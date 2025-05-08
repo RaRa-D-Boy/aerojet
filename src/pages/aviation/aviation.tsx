@@ -44,8 +44,9 @@ const Aviation = () => {
         </p>
       </div>
       <div className='bg-gray-100 p-8 rounded-lg'>
-      <img
-            src={Engineering2}
+      
+          <img
+            src={Engineering3}
             alt='Tamale Hangar'
             className='min-h-[300px]  max-h-[300px] rounded-lg w-full object-cover my-3'
           />
@@ -63,7 +64,7 @@ const Aviation = () => {
       </div>
       <div className='bg-gray-100 p-8 rounded-lg'>
       <img
-            src={Engineering3}
+            src={Engineering2}
             alt='Tamale Hangar'
             className='min-h-[300px]  max-h-[300px] rounded-lg w-full object-cover my-3'
           />
